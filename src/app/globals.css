@@ -16,10 +16,10 @@
 @theme {
   /* Tus colores personalizados */
   /* AZUL */
-/*   --color-brand-primary: #011627;
+   --color-brand-primary: #011627;
   --color-brand-secondary: #fbfef9;
   --color-brand-accent: #207bff;
-  --color-brand-accent-hover: #21b1ff; */
+  --color-brand-accent-hover: #21b1ff; 
 
   /* Verde*/
 /*     --color-brand-primary: #004b23;    
@@ -27,11 +27,11 @@
   --color-brand-accent: #38b000;     
   --color-brand-accent-hover: #008000; */
   /* rojo */
-  
-    --color-brand-primary: #000000;    
+
+/*     --color-brand-primary: #000000;    
    --color-brand-secondary: #fffffc;  
   --color-brand-accent: #ff0000;     
-  --color-brand-accent-hover: #c83e2a;
+  --color-brand-accent-hover: #c83e2a; */
 
   /* Animación para los círculos del Hero/Login */
   @keyframes blob {

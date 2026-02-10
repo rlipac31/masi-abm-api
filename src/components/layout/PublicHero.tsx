@@ -56,7 +56,7 @@ export function PublicHero() {
         {/* LADO DERECHO: VISUAL TECNOLÓGICO (Match con el Login) */}
         <div className="lg:col-span-5 relative ">{/* bg-[#021d33]  este color queda bien con la paleta azul */}
           <div className="relative z-10 bg-brand-primary p-2  rounded-[3.5rem] shadow-3xl transform lg:rotate-3 hover:rotate-0 transition-transform duration-700">
-            <div className="bg-brand-primary/50 rounded-[3rem] p-8 border border-white/10">
+            <div className="bg-[#021d33]  rounded-[3rem] p-8 border border-white/10">
               {/* Card de métricas estilo Dashboard */}
               <div className="space-y-6 ">
                 <div className="flex justify-between items-start">
@@ -82,7 +82,7 @@ export function PublicHero() {
                   </div>
                 </div>
 
-                <div className="pt-4 flex items-center gap-3 text-red-400">
+                <div className="pt-4 flex items-center gap-3 text-emerald-400">
                   <ShieldCheck size={18} />
                   <span className="text-[10px] font-black uppercase tracking-widest">Protocolos de seguridad ISO 27001</span>
                 </div>
