@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+
+
+/* azul */
+
+/*    @theme {
+  --color-brand-primary: #011627;    
+  --color-brand-secondary: #fbfef9;  
+  --color-brand-accent: #207bff;    
+  --color-brand-accent-hover: #21b1ff;
+} 
+
+ */
+
+@theme {
+  /* Tus colores personalizados */
+  /* AZUL */
+/*   --color-brand-primary: #011627;
+  --color-brand-secondary: #fbfef9;
+  --color-brand-accent: #207bff;
+  --color-brand-accent-hover: #21b1ff; */
+
+  /* Verde*/
+/*     --color-brand-primary: #004b23;    
+   --color-brand-secondary: #fffffc;  
+  --color-brand-accent: #38b000;     
+  --color-brand-accent-hover: #008000; */
+  /* rojo */
+  
+    --color-brand-primary: #000000;    
+   --color-brand-secondary: #fffffc;  
+  --color-brand-accent: #ff0000;     
+  --color-brand-accent-hover: #c83e2a;
+
+  /* Animación para los círculos del Hero/Login */
+  @keyframes blob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0px, 0px) scale(1); }
+  }
+  --animate-blob: blob 7s infinite;
+}
+
+/* Utilidad extra para delays de animación */
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+ 
+
+/*1 Gris oscuro profundo */
+/*2 Hueso / Blanco sucio */
+ /*3 Rojo coral vibrante */
+
+ /* rojo */
+
+/*   @theme {
+  --color-brand-primary: #000000;    
+   --color-brand-secondary: #fffffc;  
+  --color-brand-accent: #ff0000;     
+  --color-brand-accent-hover: #c83e2a;
+}  */
+ 
+
+/* verde */
+
+/* 
+  @theme {
+  --color-brand-primary: #004b23;    
+   --color-brand-secondary: #fffffc;  
+  --color-brand-accent: #38b000;     
+  --color-brand-accent-hover: #008000;
+}  */
