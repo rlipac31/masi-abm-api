@@ -13,11 +13,19 @@ export interface Patient {
   namePatient: string;
   agePatient: number;
   dniPatient: string;
-  addressPatient: string | Address; // Soporta ambos formatos de tu API
+ addressPatient: string | AddressPatient;
   medicalHistory: string;
   familyContactId: number;
-  responsibleFamily:object;
+  responsibleFamily:family;
 }
+
+export interface AddressPatient {
+  calle?: string;
+  ciudad?: string;
+  numero?: string;
+  distrito?: string;
+}
+
 
 export interface family{
     nameUser:string;

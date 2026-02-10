@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { User, MapPin, ClipboardList, Edit3, Trash2, ChevronDown, HeartHandshake, Mail } from "lucide-react";
-import { Patient } from "@/types/patient";
+import { Patient } from "@/src/types/patient";
 
 export function PatientCard({ patient }: { patient: Patient }) {
   // Estado para controlar qué sección está abierta (dir, hist, o family)

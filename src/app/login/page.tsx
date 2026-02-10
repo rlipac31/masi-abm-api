@@ -27,7 +27,7 @@ type LoginFormValues = z.infer<typeof loginSchema>;
 
 export default function LoginPymePage() {
 const { user, setUser}= useUser()
- const searchParams = useSearchParams();
+ //const searchParams = useSearchParams();
   const router = useRouter();
 
   const [userLogueado, setUserLogueado ] = useState<any>(null);
@@ -43,7 +43,7 @@ const { user, setUser}= useUser()
   });
 
     // Capturamos a dónde quería ir el usuario originalmente
-  const destination = searchParams.get('from') || '/'; 
+  //const destination = searchParams.get('from') || '/'; 
 
    // 3. Función para enviar a la API de Node.js
   const onSubmit = async (data: LoginFormValues) => {
@@ -66,14 +66,14 @@ const { user, setUser}= useUser()
             setUser(dataLogin.user);
             console.log("user... desde login", dataLogin.user)
             // Elige un solo camino para el path
-             const finalPath = destination !== '/' 
+           /*   const finalPath = destination !== '/' 
                 ? destination 
                 : `/admin/dashboard`;
             
-            router.push(finalPath); 
+            router.push(finalPath); */ 
 
 
-           // router.push('/admin/dashboard')
+            router.push('/admin/dashboard')
 
 
           

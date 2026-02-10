@@ -53,7 +53,7 @@ export function CaregiverTable({ data}: CaregiverTableProps) {
                       <p className="font-black text-brand-primary text-sm uppercase leading-none">
                         {item.firstName} {item.lastName}
                       </p>
-                      <span className="text-[10px] text-slate-400 font-medium">ID Usuario: {item.userId}</span>
+                      <span className="text-[10px] text-slate-400 font-medium">ID Usuario: {item.id}</span>
                     </div>
                   </div>
                 </td>
@@ -81,14 +81,14 @@ export function CaregiverTable({ data}: CaregiverTableProps) {
                 <td className="px-6 py-5">
                   <div className="flex justify-end gap-2">
                     <button 
-                      onClick={() => onEdit(item)}
+                    //  onClick={() => onEdit(item)}
                       className="p-2 bg-white border border-slate-200 rounded-lg text-brand-primary hover:border-brand-primary transition-all shadow-sm group-hover:bg-brand-primary group-hover:text-white"
                       title="Editar"
                     >
                       <Edit2 size={16} />
                     </button>
                     <button 
-                      onClick={() => onDelete(item.id)}
+                    //  onClick={() => onDelete(item.id)}
                       className="p-2 bg-white border border-slate-200 rounded-lg text-slate-400 hover:text-brand-accent hover:border-brand-accent transition-all shadow-sm"
                       title="Eliminar"
                     >

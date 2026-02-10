@@ -25,6 +25,8 @@ export async function getPatientsAction(): Promise<PatientsResponse> {
     return await response.json();
   } catch (error) {
     console.error(error);
-    return { total: 0, content: [] };
+    return { ok:false, msg:"", total: 0,  content: []  };
+  
   }
 }
+

@@ -54,9 +54,9 @@ export default async function PatientsPage() {
               <div className="flex items-center gap-1 text-sm text-slate-600">
                 <MapPin size={14} className="text-brand-accent" />
                 <span className="truncate max-w-[200px]">
-                  {typeof patient.addressPatient === 'string' 
+                  {typeof patient?.addressPatient === 'string' 
                     ? patient.addressPatient 
-                    : `${patient.addressPatient?.calle} ${patient.addressPatient.numero}  `}
+                    : `${patient?.addressPatient?.calle ?? ''} ${patient?.addressPatient?.numero ?? ''}`}
                 </span>
               </div>
             </td>
