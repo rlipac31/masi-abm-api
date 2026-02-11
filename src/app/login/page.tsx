@@ -78,6 +78,7 @@ const { user, setUser}= useUser()
 
           
         } 
+      //  console.log(" ho un error tipo ", error)
 
     } catch (error) {
     console.error("Error en login:", error);

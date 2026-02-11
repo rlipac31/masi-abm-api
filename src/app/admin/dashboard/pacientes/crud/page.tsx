@@ -2,6 +2,8 @@ import { getPatientsAction } from "@/src/actions/pacientes";
 import { DataTable } from "@/src/components/pacientes/DataTable";
 import { UserPlus, Search, Edit3, Trash2, MapPin } from "lucide-react";
 
+import Link from "next/link";
+
 export default async function PatientsPage() {
   const { content: patients } = await getPatientsAction();
 
@@ -17,11 +19,13 @@ export default async function PatientsPage() {
           </h1>
           <p className="text-slate-500 font-medium">Listado de altas y control de historias clínicas</p>
         </div>
-        
-        <button className="flex items-center gap-2 bg-brand-accent hover:bg-brand-accent-hover text-white px-6 py-3 rounded-xl font-bold transition-all shadow-lg active:scale-95 cursor-pointer">
+         <Link href={`/admin/dashboard/pacientes/crud/save`}>
+           <button className="flex items-center gap-2 bg-brand-accent hover:bg-brand-accent-hover text-white px-6 py-3 rounded-xl font-bold transition-all shadow-lg active:scale-95 cursor-pointer">
           <UserPlus size={20} />
           REGISTRAR PACIENTE
         </button>
+       </Link> 
+       
       </div>
 
       {/* Buscador Rápido */}

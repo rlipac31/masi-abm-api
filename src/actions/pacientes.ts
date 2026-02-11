@@ -30,3 +30,28 @@ export async function getPatientsAction(): Promise<PatientsResponse> {
   }
 }
 
+
+
+
+export async function createPatientAction(data: any) {
+    const cookieStore = await cookies();
+  const token = cookieStore.get("token")?.value;
+
+  if (!token) throw new Error("No existe token de sesión");
+  try {
+    const response = await fetch("http://localhost:5000/api/patients", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "x-token":token },
+      body: JSON.stringify(data),
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(errorData.message || "Error al guardar");
+    }
+
+    return { success: true };
+  } catch (error: any) {
+    return { success: false, error: error.message };
+  }
+}
